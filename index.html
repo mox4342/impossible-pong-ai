@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPOSSIBLE PONG AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="instructions">
+            <p>Controls: W/S | Space: Start/Pause | E: Ice Shot | P: Practice | D: Debug | M: Mute</p>
+        </div>
+        <div class="stats-display" id="statsDisplay"></div>
+        <!-- AI Debug Panel (positioned outside game area) -->
+        <div id="debug-panel" style="display: none;"></div>
+    </div>
+    <!-- Load main game file first to set up global config -->
+    <script src="game-balanced.js"></script>
+    <!-- Then load all supporting modules -->
+    <script src="enhanced-audio.js"></script>
+    <script src="impossible-ai.js"></script>
+    <script src="effects.js"></script>
+    <script src="ai-personality.js"></script>
+    <script src="progression.js"></script>
+    <!-- <script src="challenges.js"></script> Challenge system removed -->
+    <script src="init.js"></script>
+</body>
+</html>
